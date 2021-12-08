@@ -7,7 +7,9 @@ export default function Home() {
 
   useEffect(() => {
     if(!router.isReady) return;
-    router.push(`https://app.mazurylabs.com/`)
+    if(router.query.slug){
+        router.push(`https://app.mazurylabs.com/people/${router.query.slug}`)
+    }
   }, [router.isReady])
 
   return (
