@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     if(!router.isReady) return;
-    router.push(`https://app.mazurylabs.com/`)
+    router.push(`https://app.mazury.xyz/`)
   }, [router.isReady])
 
   return (

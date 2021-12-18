@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     if(!router.isReady) return;
     if(router.query.slug){
-        router.push(`https://app.mazurylabs.com/people/${router.query.slug}`)
+        router.push(`https://app.mazury.xyz/people/${router.query.slug}`)
     }
   }, [router.isReady])
 
